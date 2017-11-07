@@ -9,6 +9,8 @@
 * 使用`1.6.2`版本的心跳包格式
 * 加了一个简单的界面
 
+[运行起来像这样](http://ok85zcadb.bkt.clouddn.com/douyu-bullet-screen-demo.gif)
+
 ## 开发环境
 
 * Visual Studio 2017 Community
