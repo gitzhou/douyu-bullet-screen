@@ -25,7 +25,7 @@ namespace DouyuBulletScreen.Message
                     object value = s.Substring(i + 2);
                     if (value.ToString().Contains("@A"))
                     {
-                        value = DouyuEncoder.EscapeToText(value.ToString());
+                        value = DouyuEncoder.EscapeToPlain(value.ToString());
                         value = ParseMessage(value.ToString());
                     }
                     dic[key] = value;

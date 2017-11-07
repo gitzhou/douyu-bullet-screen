@@ -37,6 +37,7 @@ namespace DouyuBulletScreen.Message
         // 构建协议消息包
         private static byte[] BuildPackage(string data)
         {
+            ILogger logger = RichTextBoxLogger.GetInstance();
             System.IO.MemoryStream stream = new System.IO.MemoryStream();
             try
             {
@@ -53,7 +54,7 @@ namespace DouyuBulletScreen.Message
             }
             catch (Exception e)
             {
-                RichTextBoxLogger.GetInstance().Log(e.Message);
+                logger.Log(e.Message);
             }
             return stream.ToArray();
         }

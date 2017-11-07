@@ -10,11 +10,11 @@ namespace DouyuBulletScreen.Client
 {
     public class DouyuBulletScreenClient
     {
-        private RichTextBoxLogger logger = RichTextBoxLogger.GetInstance();
-
         private static readonly string HOST = ConfigurationManager.AppSettings["Host"];
         private static readonly int PORT = int.Parse(ConfigurationManager.AppSettings["Port"]);
         private static readonly int BUFFER_SIZE = int.Parse(ConfigurationManager.AppSettings["BufferSize"]);
+
+        private ILogger logger = RichTextBoxLogger.GetInstance();
 
         private Socket socket;
 
