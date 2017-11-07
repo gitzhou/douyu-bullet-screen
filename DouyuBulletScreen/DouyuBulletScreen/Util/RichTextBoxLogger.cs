@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace DouyuBulletScreen.Util
 {
-    public class RichTextBoxLogger
+    public class RichTextBoxLogger : ILogger
     {
         private static RichTextBoxLogger instance;
 
