@@ -179,7 +179,7 @@ namespace DouyuBulletScreen.Client
                 /* TODO 根据业务需求来处理获取到的所有弹幕及礼物信息 */
 
                 // 判断消息类型
-                if (message["type"].ToString() == "chatmsg") // 弹幕消息
+                if (message["type"].ToString() == "chatmsg" && message.ContainsKey("nn") && message.ContainsKey("txt")) // 弹幕消息
                 {
                     logger.Log(string.Format("[{0}] {1}", message["nn"], message["txt"]));
                 }
