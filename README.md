@@ -9,7 +9,7 @@
 * 使用`1.6.2`版本的心跳包格式
 * 加了一个简单的界面
 
-[运行起来像这样](https://ol0jbsdum.qnssl.com/douyu-bullet-screen-demo.gif)
+[运行起来像这样](https://i.imgur.com/TCRNHsK.gifv)
 
 ## 开发环境
 
